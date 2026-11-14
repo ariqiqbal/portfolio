@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariq Iqbal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV (desktop) -->
+  <nav id="desktop-nav">
+    <div class="logo">Ariq Iqbal</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- NAV (mobile) -->
+  <nav id="hamburger-nav">
+    <div class="logo">Ariq Iqbal</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="profile">
+    <div class="pic-container">
+      <img src="assets/profile.jpg" alt="Ariq Iqbal" onerror="this.src='https://placehold.co/400x400?text=Your+Photo'" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ariq Iqbal</h1>
+      <p class="section__text__p2">Computer Science Student &amp; App Builder</p>
+      <div class="btn-container">
+        <button class="btn btn-1" onclick="window.open('assets/cv.pdf')">Download CV</button>
+        <button class="btn btn-2" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="emoji">💻</div>
+            <h3>Experience</h3>
+            <p>Team projects<br />Startup capstone</p>
+          </div>
+          <div class="details-container">
+            <div class="emoji">🎓</div>
+            <h3>Education</h3>
+            <p>B.Sc. Computer Science<br />Hanyang University ERICA</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a computer science student in Korea. I like to build apps that fix real
+            problems — from a halal food finder for students to a micro-job platform.
+            I learn by building, and I use AI tools to ship faster. Now I study databases,
+            app development and startups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="experience" class="reveal">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Development</h2>
+          <div class="article-container">
+            <article><span class="check">✔</span><div><h3>HTML / CSS</h3><p>Intermediate</p></div></article>
+            <article><span class="check">✔</span><div><h3>JavaScript</h3><p>Basic</p></div></article>
+            <article><span class="check">✔</span><div><h3>Python</h3><p>Intermediate</p></div></article>
+            <article><span class="check">✔</span><div><h3>Java / C</h3><p>Basic</p></div></article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data &amp; Tools</h2>
+          <div class="article-container">
+            <article><span class="check">✔</span><div><h3>PostgreSQL</h3><p>Intermediate</p></div></article>
+            <article><span class="check">✔</span><div><h3>Git / GitHub</h3><p>Basic</p></div></article>
+            <article><span class="check">✔</span><div><h3>Figma</h3><p>Basic</p></div></article>
+            <article><span class="check">✔</span><div><h3>Notion</h3><p>Advanced</p></div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/project-1.jpg" alt="HYU Foodie" onerror="this.src='https://placehold.co/600x400?text=HYU+Foodie'" />
+        <h3>HYU Foodie</h3>
+        <p>Halal &amp; dietary food finder app for Hanyang ERICA students.</p>
+        <a class="btn btn-1" href="#" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project-2.jpg" alt="돈을벌자" onerror="this.src='https://placehold.co/600x400?text=Micro-Job+App'" />
+        <h3>돈을벌자</h3>
+        <p>Micro-bounty side-job platform. SW startup capstone.</p>
+        <a class="btn btn-1" href="#" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project-3.jpg" alt="Workout App" onerror="this.src='https://placehold.co/600x400?text=Workout+App'" />
+        <h3>Workout App</h3>
+        <p>Workout tracker with motion graphics, built with AI tools.</p>
+        <a class="btn btn-1" href="#" target="_blank">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <span>✉️</span>
+        <p><a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <span>🔗</span>
+        <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; <span id="year"></span> Ariq Iqbal. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
